@@ -18,16 +18,16 @@
 
 # 3. Example
 - Graphical illustration of the principles of techniques involved in Conv2dPA
-<img src="https://github.com/V-Geler/v_Conv2dPA/blob/main/img/Conv2dPA_flowchart.png" alt="Image" width="750" height="auto">
+<img src="https://github.com/V-Geler/Conv2dPA/blob/main/img/Conv2dPA_flowchart.png" alt="Image" width="750" height="auto">
 
 - Simulated HPLC-DAD data
-<img src="https://github.com/V-Geler/v_Conv2dPA/blob/main/img/Simulator_uniform.jpg" alt="Image" width="500" height="auto">
+<img src="https://github.com/V-Geler/Conv2dPA/blob/main/img/Simulator_uniform.jpg" alt="Image" width="500" height="auto">
 
 - Conv2dPA Fitting
-<img src="https://github.com/V-Geler/v_Conv2dPA/blob/main/img/Conv2dPA_Fitting.jpg" alt="Image" width="750" height="auto">
+<img src="https://github.com/V-Geler/Conv2dPA/blob/main/img/Conv2dPA_Fitting.jpg" alt="Image" width="750" height="auto">
 
 - Conv2dPA Alignment (chromatogram at λ=270.41 nm)
-<img src="https://github.com/V-Geler/v_Conv2dPA/blob/main/img/RawData%26Conv2dPA_chroma270.jpg" alt="Image" width="500" height="auto">
+<img src="https://github.com/V-Geler/Conv2dPA/blob/main/img/RawData%26Conv2dPA_chroma270.jpg" alt="Image" width="500" height="auto">
 
 # 4. Contact
 For any questions, please contact: An-Qi Chen, vgeler9602@gmail.com
