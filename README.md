@@ -18,7 +18,7 @@
 
 # 3. Example
 - Graphical illustration of the principles of techniques involved in Conv2dPA
-<img src="https://github.com/V-Geler/Conv2dPA/blob/main/img/Conv2dPA_flowchart.png" alt="Image" width="750" height="auto">
+<img src="https://github.com/V-Geler/Conv2dPA/blob/main/img/Conv2dPA_flowchart.jpg" alt="Image" width="750" height="auto">
 
 - Simulated HPLC-DAD data
 <img src="https://github.com/V-Geler/Conv2dPA/blob/main/img/Simulator_uniform.jpg" alt="Image" width="500" height="auto">
