@@ -1,0 +1,28 @@
+[DESCRIPTION]
+    https://doi.org/10.1016/j.chroma.2022.463121
+    Three analytes in Atractylodes macrocephala Koidz.
+    In retention time order:
+        Ferulic acid (FUA)
+        Scopoletin (SCO)
+        Umbelliferone (UMB)
+
+[VARIABLE]
+name                分析物名称
+Chroma              色谱的结构体
+    @.data          色谱轮廓（等长）
+        [51, 3]
+    @.axis          色谱坐标（保留时间）
+        [51, 1]
+    @.unit          保留时间单位
+        "min"
+    @.idxRT         每个分析物色谱范围对应的保留时间点索引值[beg, end]
+        [3, 2]    
+Spec                光谱的结构体
+    @.data          光谱轮廓（等长）
+        [214, 3]
+    @.axis          光谱坐标（吸收波长）
+        [214, 1]
+    @.unit          吸收波长单位
+        "nm"
+    @.idxWL         每个分析物光谱范围对应的吸收波长点索引值[beg, end]
+        [3, 2]

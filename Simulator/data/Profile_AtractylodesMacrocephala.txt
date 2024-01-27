@@ -1,0 +1,37 @@
+[DESCRIPTION]
+    https://doi.org/10.1016/j.chroma.2022.463121
+    Twelve analytes in Atractylodes macrocephala Koidz.
+    In retention time order:
+        Syringin (SYR)
+        3,4-Dihydroxybenzoic acid(DIH)
+        Caffeic acid(CAF)
+        Ferulic acid (FUA)
+        Scopoletin (SCO)
+        Umbelliferone (UMB)
+        Luteolin (LUT)
+        Atractylenolide III (ATR3)
+        Atractylenolide II (ATR2)
+        trans-2,4-Decadienal (DDA)
+        Atractylenolide I (ATR1)
+        Atractylon (ATN)
+
+[VARIABLE]
+name                分析物名称
+Chroma              色谱的结构体
+    @.data          色谱轮廓（不等长）
+        cell{1, 12}
+    @.axis          色谱坐标（保留时间）
+        [2254, 1]
+    @.unit          保留时间单位
+        "min"
+    @.idxRT         每个分析物色谱范围对应的保留时间点索引值[beg, end]
+        [12, 2]    
+Spec                光谱的结构体
+    @.data          光谱轮廓（等长）
+        [214, 12]
+    @.axis          光谱坐标（吸收波长）
+        [214, 1]
+    @.unit          吸收波长单位
+        "nm"
+    @.idxWL         每个分析物光谱范围对应的吸收波长点索引值[beg, end]
+        [12, 2]

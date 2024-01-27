@@ -1,0 +1,36 @@
+[DESCRIPTION]
+    https://doi.org/10.1016/j.chroma.2022.463426
+    Six protoberberine-type alkaloids, major active alkaloids in Coptidis Rhizoma.
+    In retention time order:
+        Columbamine (COL)
+        Epiberberine (EPI)
+        Jatrorrhizine (JAT)
+        Coptisine (COP)
+        Palmatine (PAL)
+        Berberine (BER)
+    Two unknown interferences:
+        Interference 1, from Coptidis Rhizoma-related topical medication, embedding with COP and overlapped with JAT
+        Interference 2, from Chinese patent medicines (Left Metal Pill), overlapped with COP
+
+[VARIABLE]
+name                分析物名称
+Chroma              色谱的结构体
+    @.data          色谱轮廓（不等长）
+        cell{1, 8}
+    @.axis          色谱坐标（保留时间）
+        [1876, 1]
+    @.unit          保留时间单位
+        "min"
+    @.idxRT         每个分析物色谱范围对应的保留时间点索引值[beg, end]
+        [8, 2]
+    @.paramEMG      使用EMG生成色谱轮廓的参数[mu, sigma, tao]
+        [8, 3]      
+Spec                光谱的结构体
+    @.data          光谱轮廓（等长）
+        [263, 8]
+    @.axis          光谱坐标（吸收波长）
+        [263, 1]
+    @.unit          吸收波长单位
+        "nm"
+    @.idxWL         每个分析物光谱范围对应的吸收波长点索引值[beg, end]
+        [8, 2]
