@@ -7,7 +7,7 @@
 - Baseline drift
 
 **[Simulator]**\
-&emsp;Generate simulated HPLC-DAD datasets. Supports simulation of 
+&emsp;Generate simulated HPLC-DAD datasets. Supports simulation of:
 - variable noise levels
 - nonlinear retention time shift
 - baseline drift (different shape and intensity)
