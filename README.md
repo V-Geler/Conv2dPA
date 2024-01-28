@@ -1,8 +1,16 @@
 # Conv2dPA
 **[Conv2dPA]**\
-&emsp;Two-dimensional convolution based nonlinear retention time alignment for HPLC-DAD data\
+&emsp;Two-dimensional convolution-based nonlinear retention time alignment solution for HPLC-DAD data &emsp;*[(Description)](https://github.com/V-Geler/Conv2dPA/tree/main/Conv2dPA/README_Conv2dPA.md)*
+- Highly complex fingerprints
+- Nonlinear retention time shift
+- Overlapping and even embedded chromatographic profiles
+- Baseline drift
+
 **[Simulator]**\
-&emsp;Generate simulated HPLC-DAD datasets. Supports simulation of (1) variable noise levels, (2) nonlinear retention time shift, and (3) baseline drift.
+&emsp;Generate simulated HPLC-DAD datasets. Supports simulation of 
+- variable noise levels
+- nonlinear retention time shift
+- baseline drift (different shape and intensity)
 
 # 2. Installation and Usage
 2.1 MATLAB version\
@@ -10,7 +18,7 @@
 2.2 Usage\
 &emsp;1. Download and unzip it from this URL.\
 &emsp;2. Run iniconfig.m to add the folders to the MATLAB search path.\
-&emsp;3. Several demonstration scripts are provided. These should help users of the Conv2dPA algorithm and Simulator to get the first idea of how they can be applied. Useful codes for visualization are also provided to help interpret the results.\
+&emsp;3. Several demonstration scripts are provided. These should help users of the Conv2dPA solution and Simulator to get the first idea of how they can be applied. Useful codes for visualization are also provided to help interpret the results.\
 &emsp;&emsp;&emsp;Conv2dPA/demo_Conv2dPA.mlx \
 &emsp;&emsp;&emsp;Simulator/demo_simulateLCDAD_rand.mlx \
 &emsp;&emsp;&emsp;Simulator/demo_simulateLCDAD_uniform.mlx \

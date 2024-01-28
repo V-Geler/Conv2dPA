@@ -1,0 +1,67 @@
+[VARIABLE]
+
+simuData					Struct
+	@.data					raw HPLC-DAD data
+		310*263*23, double			
+							310 retention time points, 263 spectral channels, 23 samples
+							* 13 calibration samples, with 4 analytes of interest
+							* 5 prediction samples, with 1 unknown interference (embedded overlap with the chromatographic peak of Analyte 4)
+							* 5 spiked prediction samples, with 1 unknown interference
+							* Varying degrees of retention time shift
+							* Variable baseline drifts (sigmoidal curve)
+							* Normally distributed random noise (level = 0.1)
+	@.DimX					Number of data points for dimensions of chromatogram, spectra, component, and analytes.
+		1*4, uint8 or double
+	@.axis					The coordinate axes for dimensions of chromatogram, spectra, and samples.
+		3*1, cell
+	@.axisunit				The unit of coordinate axes.
+		3*1, string
+	@.compName				The name of components.
+		6*1, string
+	@.profileChroma			The true chromatographic profiles for each component in each sample.
+		310*6*23, double
+	@.profileSpec			The true spectral profiles for each component
+		263*6, double
+	@.profileConc			The true concentrations (designed) for each component in each sample.
+		23*6, double
+	@.baseline				If the baseline drift is simulated in this data.
+		1*1, boolean
+	@.param					Struct to record the parameters for [Simulator] to generate this data.
+							* Simulator -- freely available at https://github.com/V-Geler/Conv2dPA/tree/main/Simulator
+
+Comp						The number of factors. Enter a pre-estimated value.
+	1*1, uint8 or double
+							* Comp refer to the total number of detectable components (analytes, interferences), baseline, and noise.
+							* It is consistent with 'N' defined in most chemometric decomposition models.
+							* https://doi.org/10.1016/B978-0-443-13261-2.00015-1
+
+INFO						Struct
+	NECESSARY
+	@.RefChroma				The initial estimates of pure chromatographic profiles.
+		310*5, double
+							* Obtained by chemometric decomposition
+							* Contained 4 analytes and 1 interference
+							* Baseline is here modeled as 1 variable component
+	NECESSARY
+	@.RefSpec				The initial estimates of pure spectra profiles.
+		263*5, double
+							* Obtained together with @.RefChroma.
+	OPTIONAL
+	@.Isp_mat				Presence or absence of each component in each sample.
+		23*5, boolean
+							* Value '0' for absence.
+							* Value '1' for presence. (Default)
+	OPTIONAL
+	@.compProp				Properties of component.
+		1*5, unit8 or double
+							* Value '1' for Analytes or Interference. (Default)
+							* Value '2' for Background or Multi-components with low-intensity.
+							* Value '0' for Baseline or Noise, as a variable component.
+							* The function supports automatic completion.
+
+kwargs						Struct
+	OPTIONAL
+	@.verbose				Display logs or not.
+		1*1, boolean
+							* Value '0' for do not display.
+							* Value '1' for display. (Default)
