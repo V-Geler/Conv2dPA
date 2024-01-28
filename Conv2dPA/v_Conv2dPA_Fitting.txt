@@ -5,19 +5,28 @@ function [fitConv2dPA] = v_Conv2dPA_Fitting(X_RtWlSam, Comp, Info, kwargs)
 %
 % Input [NECESSARY]
 %
-% X_RtWlSam     : [NECESSARY] HPLC-DAD measurements. 
-%                 Enter a 3-way tensor in the order of :
-%                 [Elution time point, Wavelength point, Samples].
-%                 Nonlinear retention time alignment will be performed.
+% X_RtWlSam     : [NECESSARY] Raw HPLC-DAD measurements.
+%                 * Enter a 3-way tensor in the order of :
+%                   [Elution time point, Wavelength point, Samples].
+%                 * The size of X_RtWlSam is [sz_rt, sz_wl, sz_sam].
+%                 * Nonlinear retention time alignment will be performed.
 %
 % Comp          : The number of factors. Enter a pre-estimated value.
+%                 * Comp refer to the total number of detectable components
+%                   (analytes, interferences), baseline, and noise.
+%                 * It is consistent with 'N' defined in most chemometric
+%                   decomposition models.
+%                 * https://doi.org/10.1016/B978-0-443-13261-2.00015-1
 %
 % Info          : [NECESSARY] A struct for reference infomation and 
 %                 constraints on chromatographic and spectra profiles.
-%   @.RefChroma : [NECESSARY] The estimation of chromatographic profiles. 
-%                 Enter a matrix with size of [sz_rt, sz_comp].
-%   @.RefSpec   : [NECESSARY] The estimation of spectra profiles.
-%                 Enter a matrix with size of [sz_wl, sz_comp].
+%   @.RefChroma : [NECESSARY] The estimates of chromatographic profiles. 
+%                 * Enter a matrix with size of [sz_rt, sz_comp].
+%                 * Obtained by chemometric decomposition
+%   @.RefSpec   : [NECESSARY] The estimates of spectra profiles.
+%                 * Enter a matrix with size of [sz_wl, sz_comp].
+%                 * Obtained by chemometric decomposition
+%                 * Obtained together with @.RefChroma
 %
 % Input [OPTIONAL]
 %

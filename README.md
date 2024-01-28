@@ -1,6 +1,6 @@
 # Conv2dPA
-**[Conv2dPA]**\
-&emsp;Two-dimensional convolution-based nonlinear retention time alignment solution for HPLC-DAD data &emsp;*[(Description)](https://github.com/V-Geler/Conv2dPA/tree/main/Conv2dPA/README_Conv2dPA.md)*
+**[Conv2dPA]**&emsp;*[(Description)](https://github.com/V-Geler/Conv2dPA/tree/main/Conv2dPA/README_Conv2dPA.md)*\
+&emsp;Two-dimensional convolution-based nonlinear retention time alignment solution for HPLC-DAD data
 - Highly complex fingerprints
 - Nonlinear retention time shift
 - Overlapping and even embedded chromatographic profiles

@@ -1,4 +1,4 @@
-[VARIABLE]
+    [VARIABLE]
 
 simuData					Struct
 	@.data					raw HPLC-DAD data
