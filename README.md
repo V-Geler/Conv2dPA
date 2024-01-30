@@ -14,7 +14,7 @@
 
 # 2. Installation and Usage
 2.1 GNU Octave version\
-&emsp;Install *[GNU Octave 8.4.0](https://octave.org/download)* or higher on your computer.\
+&emsp;Install *[GNU Octave 8.4.0](https://octave.org/download)* or higher on your computer.
 - package *[Statistics](https://octave.sourceforge.io/statistics/index.html)*
 - package *[General](https://octave.sourceforge.io/general/index.html)*
 - package *[String Handling](https://octave.sourceforge.io/strings/index.html)*
