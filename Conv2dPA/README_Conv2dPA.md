@@ -7,14 +7,14 @@
 - Baseline drift
 
 # 2. Statement
-&emsp;All original *[GNU Octave](https://octave.org/)* will be made public once upon the manuscript "**Conv2dPA: Two-dimensional Convolution Sharpening-Based Non-linear Alignment Solution for Chromatographic Fingerprints with High Complexity and Co-elution Behavior**" is accepted for publication.
+&emsp;All original *[GNU Octave](https://octave.org/)* codes will be made public once upon the manuscript "**Conv2dPA: Two-dimensional Convolution Sharpening-Based Non-linear Alignment Solution for Chromatographic Fingerprints with High Complexity and Co-elution Behavior**" is accepted for publication.
 
 &emsp;A **simulated dataset** (discussed in the manuscript) and several **demonstration scripts** are provided. We expect that these should help users of the Conv2dPA solution to get the first idea of how it can be applied. Useful codes for **visualization** are also provided to help interpret the results.\
 &emsp;&emsp;./test/demo_simuData.mat --- Data\
 &emsp;&emsp;./test/demo_simuData.txt --- Description\
 &emsp;&emsp;./demo_Conv2dPA.md --- Demonstration scripts
 
-&emsp;The text documents "*.txt" with the same name as the functions provide instructions of the **INPUT** and **OUTPUT** in the functions. They are also provided in the original GNU Octave codes.
+&emsp;The text documents "*.txt" with the same name as the functions provide instructions of the **INPUT** and **OUTPUT** in the functions. They are also provided in the **original GNU Octave codes**.
 
 # 3. Functions
 - v_Conv2dPA_Fitting.m
